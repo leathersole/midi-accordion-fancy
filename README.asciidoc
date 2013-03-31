@@ -1,8 +1,8 @@
-AccessLampValve
+midi-accordion-fancy
 ===========
-:sources: https://github.com/leathersole/AccessLampValve
+:sources: https://github.com/leathersole/midi-accordion-fancy
 
-AccessLampValve turn on and off a GPIO pin on Raspberry Pi when user came to this web app. 
+This aim to create a midi accordion with Raspberry Pi.
 
 // vim: tw=72
 ;
