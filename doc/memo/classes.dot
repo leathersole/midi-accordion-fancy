@@ -1,0 +1,34 @@
+digraph G {
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+
+        node [
+                fontname = "Bitstream Vera Sans"
+                fontsize = 8
+                shape = "record"
+        ]
+
+        edge [
+                fontname = "Bitstream Vera Sans"
+                fontsize = 8
+        ]
+
+        SoundValue [
+                label = "{SoundValue|+ note \l+ volume\l|\l}"
+        ]
+
+        Player [
+                label = "{Player|+ soundValues \l|+ __init__\l+ play(SoundValue)\l+ stop(SoundValue)\n}"
+        ]
+        Controller [
+                label = "{Controller|- player\l|+ __init__\l+ __main__\l}"
+        ]
+
+        edge [
+                arrowhead = "empty"
+        ]
+
+        Controller -> Player
+        Controller -> SoundValue
+        Player -> SoundValue
+}
